@@ -27,10 +27,6 @@ defmodule BlockyWeb.ChannelCase do
   end
 
   setup tags do
-    :ok = Sandbox.checkout(Blocky.Repo)
-    unless tags[:async] do
-      Sandbox.mode(Blocky.Repo, {:shared, self()})
-    end
     :ok
   end
 

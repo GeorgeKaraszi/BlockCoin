@@ -7,8 +7,7 @@ use Mix.Config
 
 # General application configuration
 config :blocky_web,
-  namespace: BlockyWeb,
-  ecto_repos: [Blocky.Repo]
+  namespace: BlockyWeb
 
 # Configures the endpoint
 config :blocky_web, BlockyWeb.Endpoint,

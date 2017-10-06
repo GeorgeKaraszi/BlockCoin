@@ -29,10 +29,6 @@ defmodule BlockyWeb.ConnCase do
   end
 
   setup tags do
-    :ok = Sandbox.checkout(Blocky.Repo)
-    unless tags[:async] do
-      Sandbox.mode(Blocky.Repo, {:shared, self()})
-    end
     {:ok, conn: ConnTest.build_conn()}
   end
 

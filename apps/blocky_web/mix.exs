@@ -43,7 +43,7 @@ defmodule BlockyWeb.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:blocky, in_umbrella: true},
+      {:block_chain, in_umbrella: true},
       {:cowboy, "~> 1.0"}
     ]
   end
@@ -53,6 +53,6 @@ defmodule BlockyWeb.Mixfile do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    ["test": ["ecto.create --quiet", "ecto.migrate", "test"]]
+    ["test": ["test --color --trace"]]
   end
 end

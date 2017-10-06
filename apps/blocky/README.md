@@ -1,3 +1,0 @@
-# Blocky
-
-**TODO: Add description**
